@@ -50,7 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ProgramTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlgorithmsForAnalyzingBiologicalSequences\AlgorithmsForAnalyzingBiologicalSequences.csproj">
+      <Project>{513EA529-6BE4-4B55-99F6-C16F583E1529}</Project>
+      <Name>AlgorithmsForAnalyzingBiologicalSequences</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
